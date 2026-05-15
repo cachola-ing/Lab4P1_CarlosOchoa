@@ -141,7 +141,36 @@ public class Lab4P1_CarlosOchoa {
 
                             palabraTieneEspacio = false;
 
-                            
+                            int posicionPalabra = 0;
+
+                            while (posicionPalabra < palabraCascada.length()) {
+
+                                char caracterPalabra = palabraCascada.charAt(posicionPalabra);
+
+                                if (caracterPalabra == ' ') {
+                                    palabraTieneEspacio = true;
+                                }
+
+                                posicionPalabra++;
+                            }
+
+                            if (palabraTieneEspacio) {
+                                System.out.println("Error: La entrada no puede cometer espacios");
+                            }
+                        }
+                    }
+
+                    String lineaActual = "";
+                    int contadorLetras = 0;
+
+                    while (contadorLetras < palabraCascada.length()) {
+                        lineaActual = lineaActual + palabraCascada.charAt(contadorLetras);
+                        System.out.println(lineaActual);
+                        contadorLetras++;
+                    }
+
+                    
+
                     System.out.println("");
                     break;
                 }
@@ -154,6 +183,7 @@ public class Lab4P1_CarlosOchoa {
                 }
 
                 case 4: {
+                    System.out.println("Saliendo del programa :v");
                     break;
                 }
 
@@ -164,7 +194,7 @@ public class Lab4P1_CarlosOchoa {
                 }
             }
 
-        }
+        } //chiste: (leer rapido) --> habia un pollito que respiraba por el culito, se sentó y se murió. xdxdxdxdx Israel, Netanyahu, Epstein.
             
 
             
