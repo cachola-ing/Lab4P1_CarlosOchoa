@@ -127,10 +127,21 @@ public class Lab4P1_CarlosOchoa {
                     System.out.println("");
                     System.out.println("CASCADA Y SIMETRIA");
 
-                    
+                    String palabraCascada = "";
+                    boolean palabraTieneEspacio = true;
 
-                    
+                    while (palabraCascada.length() == 0 || palabraTieneEspacio) {
 
+                        System.out.print("Ingrese una palabra sin espacios: ");
+                        palabraCascada = entrada.nextLine();
+
+                        if (palabraCascada.length() == 0) {
+                            System.out.println("Error: La entrada no puede ser vacia");
+                        } else {
+
+                            palabraTieneEspacio = false;
+
+                            
                     System.out.println("");
                     break;
                 }
